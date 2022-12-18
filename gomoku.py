@@ -32,6 +32,7 @@ def diagonal_func(masu) :
 
 def judgment_func() :
     global result,count,end
+    
     count+=1
 
     if result==1 :

@@ -11,8 +11,7 @@ def load_model(filename):
     with open(filename, 'rb') as f:
         state = pickle.load(f)
 
-    module = machinery.SourceFileLoader(
-        state['module_path'], state['module_path']).load_module()
+    module = machinery.SourceFileLoader(state['module_path'], state['module_path']).load_module()
     args, kwargs = state['args'], state['kwargs']
     model = getattr(module, state['class_name'])(*args, **kwargs)
     model.load_state_dict(state['state_dict'])

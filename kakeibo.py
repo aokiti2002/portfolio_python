@@ -266,10 +266,6 @@ def output_page(widget):
             box1_output.insert(tkinter.END, "家族収入{}\n".format(family_income))
             box1_output.insert(tkinter.END, "家族支出{}\n".format(family_pay))
             box1_output.insert(tkinter.END, '\n')
-                
-
-
-
 
 def top_page(widget):
     widget.place_forget()

@@ -32,6 +32,7 @@ class Net(torch.nn.Module):
 def save_model(model, filename, args=[], kwargs={}):
 
     model_cpu = deepcopy(model).cpu()
+    
     state = {'module_path': inspect.getmodule(model, _filename=True).__file__,
              'class_name': model.__class__.__name__,
              'state_dict': model_cpu.state_dict(),

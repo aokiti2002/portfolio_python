@@ -79,5 +79,3 @@ btn1.place(x=320,y=50)
 
 
 app.mainloop()
-
-
